@@ -1,618 +1,182 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-navbar{
-    display: flex;
-    box-shadow: 0px 0px 15px blue;
-    background:url('./Images/Black-Abstract-Lines-Transparent.png') ;
-    background-position: left;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("./Images/home-bg.dc52d5d40a40b13154b0.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    justify-content: space-between;
-    padding: 10px 20px;
-    color: white;
-    border: none;
-}
+    background-position: top;
+    min-height: 100vh; 
+    margin: 0;
 
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: rgb(0, 0, 255);
-   background-image:  url('./Images/bg-tranparent-navbar.png');
-   background-position:top;
-   background-repeat: no-repeat;
-   background-size: 80%;
-}
-
-.portfolio-logo{
-color: white;
-text-shadow: 4px 4px 2px black;
-}
-
-.right-side-links{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 23px;
-}
-
-.right-side-links a{
-text-decoration: none;
-color: white;
-text-shadow: 3px 3px 2px black;
-font-weight: bolder;
-border-radius: 5px;
-font-size: 25px;
-}
-
-.right-side-links a:hover{
-    text-shadow: 0px 0px 25px white;
-    border-bottom:5px solid white;
-    font-weight: bolder;
-    transition: 0.4s ease-in;
-}
-
-.bar-icon{
-    width: 40px;
-    display: none;
-}
-
-.bar-icon img{
-height: 5vh;
-}
-
-.bar-icon img:hover{
-    padding: 5px;
-    border-radius: 50px;
-    background: blue;
-    transition: 1s ease;
-}
-
-@media(max-width:636px){
-    .right-side-links{
-        display: none;
-        transition: 1s ease;
-    }
-
-    .bar-icon{
-        width: 30px;
-        display: block;
-        transition: 1s ease;
-        padding: 2px;
-    }   
-}
-
-@media(max-width:545px){
-.portfolio-logo h1{
-    font-size: 25px;
-}
-}
-
-@media(max-width:345px){
-.portfolio-logo h1{
-    font-size: 20px;
-}
-}
-
-.content-container{
-    width: 100%;
-    margin: auto;
-}
-
-.top-section{
-display: flex;
-color: white;
-justify-content: center;
-gap: 150px;
-align-items: center;
-margin-top: 50px;
-text-align: center;
-}
-
-.image-container img{
-height: 300px;
-width: 200px;
-transition: 0.7s ease;
-}
-
-.right-side-text-section h1{
-font-size: 60px;
-text-shadow: 0px 0px 15px black;
-transition: 0.7s ease;
-}
-
-#heading-span{
-    font-size: 120px;
-    color: black;
-    text-shadow: 3px 3px 5px white;
-    transition: 0.7s ease;
-}
-
-#heading-span:hover{
-text-shadow: 3px 3px 15px blue;
-transition: 1s ease;
-}
-
-.my-name{
-text-shadow: 4px 4px 3px white;
-color: black;
-}
-
-.my-name:hover{
-color: white;
-text-shadow: 0px 0px 15px black;
-transition: 0.7s ease;
-}
-
-.right-side-text-section h5{
-    font-size: 50px;
-    text-shadow: 0px 0px 15px black;
-    transition: 0.7s ease;
-}
-
-.bounce-text {
-    display: inline-block;
-    animation: bounce 2s infinite;
-    margin-top: 20px;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-40px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 200px;
 }
 
 
 @media(max-width:1200px){
-    .top-section{
+    navbar {
         display: flex;
-        color: white;
-        justify-content: center;
-        gap: 100px;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 0.7s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 270px;
-        width: 180px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 50px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 80px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-        .right-side-text-section h5{
-            font-size: 40px;
-            text-shadow: 0px 0px 15px black;
-            transition: 0.7s ease;
-        }   
+        padding: 5px 100px;
+      }
+      
 }
 
-@media(max-width:1024px){
-    .image-container img{
-        border-radius: 50px;
-        height: 230px;
-        width: 180px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 40px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 70px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-        .right-side-text-section h5{
-            font-size: 30px;
-            text-shadow: 0px 0px 15px black;
-            transition: 0.7s ease;
-        }   
+.logo-section {
+  color: #c770f0;
 }
 
-@media(max-width:776px){
-    .top-section{
-        display: flex;
-        color: white;
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 80px;
-        align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 1s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 180px;
-        width: 170px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 40px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 70px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-    .right-side-text-section h5{
-        font-size: 30px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }   
+.right-side-text-section a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
 }
 
-@media(max-width:660px){
-    .top-section{
-        display: flex;
-        flex-direction: column-reverse;
-        color: white;
-        justify-content: center;
-        gap: 60px;
-        align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 0.7s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 170px;
-        width: 160px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 30px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 40px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-    .right-side-text-section h5{
-        font-size: 20px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }   
-
-    .bar-icon img{
-        height: 3.5vh;
-        }
+.right-side-text-section h4:hover {
+  border-bottom: 5px solid #c770f0;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
 }
 
-@media(max-width:480px){
-    .top-section{
-        display: flex;
-        color: white;
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 0.7s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 160px;
-        width: 150px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 25px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 35px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-    .right-side-text-section h5{
-        font-size: 17px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }   
+.right-side-text-section i {
+  font-size: 20px;
+  color: white;
 }
 
-@media(max-width:430px){
-    .top-section{
-        display: flex;
-        color: white;
-        justify-content: center;
-        gap: 40px;
-        align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 0.7s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 150px;
-        width: 140px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 22px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size:30px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-    .right-side-text-section h5{
-        font-size: 15px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }   
+.right-side-text-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-@media(max-width:345px){
-    .top-section{
-        display: flex;
-        color: white;
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-        margin-top: 50px;
-        text-align: center;
-        transition: 0.7s ease;
-     }
-
-    .image-container img{
-        border-radius: 50px;
-        height: 140px;
-        width: 130px;
-        transition: 0.7s ease;
-    }
-
-    .right-side-text-section h1{
-        font-size: 19px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }
-        
-    #heading-span{
-        font-size: 25px;
-        color: black;
-        text-shadow: 3px 3px 5px white;
-        transition: 0.7s ease;
-    }
-        
-    .right-side-text-section h5{
-        font-size: 13px;
-        text-shadow: 0px 0px 15px black;
-        transition: 0.7s ease;
-    }   
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.introduce-my-self-section{
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #c770f0;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.bar-icon {
+  display: none;
+  width: 10px;
+}
+
+.bar-icon i {
+  font-size: 25px;
+  color: #c770f0;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.bar-icon i:hover {
+  box-shadow: 1px 1px 2px 3px #c770f0;
+  transition: 0.2s ease-in;
+}
+
+@media(max-width:900px){
+    .right-side-text-section {
+        display: none;
+    }
+    
+    navbar{
+        padding: 5px 20px;
+    }
+
+    .bar-icon{
+        display: block;
+        transition: 0.2s ease-in;
+    }
+}
+
+.content-container{
     width: 80%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 320px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    padding-top: 250px;
-    transition: 0.7s ease;
-    background-image: url('./Images/circle-dotted-background-pop-art-comic-style-vector-illustration-png.webp');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: top;
 }
 
-.left-side-section---intoduce-my-self{
+.left-side-text-section---content-container{
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.left-side-section---intoduce-my-self h1{
-    font-size: 50px;
-    color: black;
-    text-shadow: 3px 3px 3px white;
-}
-
-
-.left-side-section---intoduce-my-self h4{
-    font-size: 25px;
+.welcome-head{
     color: white;
-    text-shadow: 1px 1px 1px black;
+    font-weight: lighter;
+    font-size: 50px;
 }
 
-.highlight-span{
-    text-shadow: 4px 4px 2px black;
+.my-name{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
 }
 
-.right-side-section---introduce-my-self img{
-width: 400px;
+.my-name-span{
+    color: #c770f0;
+    font-weight: bold;
 }
 
-@media(max-width:1024px){
-    .left-side-section---intoduce-my-self h1{
-        font-size: 40px;
-        text-shadow: 3px 3px 3px white;
-        transition: 0.6s ease;
-    }
-    
-    .left-side-section---intoduce-my-self h4{
-        font-size: 23px;
-        text-shadow: 2px 2px 3px white;
-        transition: 0.6s ease;
-    }
-
-    .right-side-section---introduce-my-self img{
-        width: 350px;
-        transition: 0.6s ease;
-    }
+.my-passion{
+    color: #c770f0;
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 50px;
 }
 
-@media(max-width:884px){
-    .introduce-my-self-section{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 150px;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        padding-top: 150px;
-        transition: 0.7s ease;
-        background-image: url('./Images/circle-dotted-background-pop-art-comic-style-vector-illustration-png.webp');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: top;
-        transition: 0.6s ease;
-    }
-
-    .left-side-section---intoduce-my-self h1{
-        font-size: 35px;
-        text-shadow: 3px 3px 3px white;
-        transition: 0.6s ease;
-    }
-    
-    .left-side-section---intoduce-my-self h4{
-        font-size: 20px;
-        text-shadow: 2px 2px 3px white;
-        transition: 0.6s ease;
-    }
-
-    .right-side-section---introduce-my-self img{
-        width: 300px;
-        transition: 0.6s ease;
-    }
+.right-image-section---content-container{
+    width: 50%;
 }
-
-@media(max-width:555px){
-    .introduce-my-self-section{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 100px;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        padding-top: 80px;
-        transition: 0.7s ease;
-        background-image: url('./Images/circle-dotted-background-pop-art-comic-style-vector-illustration-png.webp');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: top;
-        transition: 0.6s ease;
-    }
-
-    .left-side-section---intoduce-my-self h1{
-        font-size: 27px;
-        text-shadow: 2px 2px 2px white;
-        transition: 0.6s ease;
-    }
-       
-    .left-side-section---intoduce-my-self h4{
-        font-size: 15px;
-        text-shadow: 1px 1px 2px white;
-        transition: 0.6s ease;
-    }
-
-    .right-side-section---introduce-my-self img{
-        width: 200px;
-        transition: 0.6s ease;
-    }
-}
-
-/* ., Scroll Bar */
-::-webkit-scrollbar {
-    width: 9px; /* width of the scrollbar */
-}
-
-/* Style for the scrollbar track */
-::-webkit-scrollbar-track {
-    background: transparent; /* color of the track */
-}
-
-/* Style for the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-    background:white; /* color of the scrollbar thumb */
-    border-radius: 6px; /* round corners */
-}
-
-/* Style for the scrollbar thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:rgb(219, 218, 218); /* color of the scrollbar thumb on hover */
-}
-
-
-
-/* ., About Page */
-#body-about{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: rgb(0, 0, 255);
-   background-image:  url('./Images/black-abstract.png');
-   background-position:center;
-   background-repeat: no-repeat;
-   background-size: 100%;   
-}
-
-.about-content-container{
-    width: 80%;
-    margin: auto;
-}
-
